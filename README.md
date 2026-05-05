@@ -21,6 +21,11 @@ This project is a secure authentication system built using Spring Boot and Sprin
 - POST /api/auth/register
 - POST /api/auth/login
 
+## 🔗 API Endpoints (Implemented)
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/auth/test
+
 ## 📂 Project Structure (Planned)
 src/
  ├── controller
