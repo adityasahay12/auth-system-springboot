@@ -1,62 +1,95 @@
 # 🔐 Authentication System (Spring Boot)
 
 ## 🚀 Overview
-This project is a secure authentication system built using Spring Boot and Spring Security. It provides user registration and login functionality using JWT-based authentication.
+A backend authentication system built using Spring Boot and Spring Security.  
+It provides secure user registration and login functionality with password encryption and JWT-based authentication (in progress).
+
+---
 
 ## 🔥 Features
-- User Registration (in progress)
-- User Login (in progress)
-- JWT Authentication (in progress)
+- User Registration API
+- User Login API (structure implemented)
 - Password Encryption using BCrypt
-- REST API development
+- RESTful API design
+- Layered backend architecture
+
+---
 
 ## 🛠️ Tech Stack
 - Java
 - Spring Boot
 - Spring Security
-- JWT
+- JWT (in progress)
 - MySQL
+- Spring Data JPA
 
-## 📌 API Endpoints (Planned)
-- POST /api/auth/register
-- POST /api/auth/login
+---
 
-## 🔗 API Endpoints (Implemented)
-- POST /api/auth/register
-- POST /api/auth/login
-- GET /api/auth/test
+## 🔗 API Endpoints
+| Method | Endpoint | Description |
+|-------|--------|------------|
+| POST | /api/auth/register | Register new user |
+| POST | /api/auth/login | Login user |
+| GET  | /api/auth/test | Test protected API |
 
-## 📂 Project Structure (Planned)
+---
+
+## 📂 Project Structure
+
 src/
- ├── controller
- ├── service
- ├── repository
- ├── model
- ├── config
- └── security
+├── controller
+├── service
+├── repository
+├── model
+├── config
+└── security
 
- ## 🗄️ Database Configuration
-- MySQL database integration using Spring Data JPA
-- User data stored in relational database
-- JPA used for ORM mapping
+
+---
 
 ## 🏗️ Architecture
-- Controller Layer (Handles API requests)
-- Service Layer (Business logic)
-- Repository Layer (Database operations)
-- Model Layer (Entity classes)
+- **Controller Layer** → Handles HTTP requests  
+- **Service Layer** → Business logic  
+- **Repository Layer** → Database operations  
+- **Model Layer** → Entity classes  
 
-## 📌 Status
-🚧 Currently under development
+---
 
-## 📌 Future Improvements
-- Role-based authentication (Admin/User)
-- API validation and exception handling
-- Frontend integration (React)
+## 🗄️ Database
+- MySQL database integration  
+- Spring Data JPA for ORM  
+- User data stored securely  
 
-Spring Boot Authentication System with JWT, Security, and MySQL (In Progress)
+---
+
+## 🔐 Security Features
+- Password encryption using BCrypt  
+- Structured authentication flow  
+- JWT authentication (in progress)  
+
+---
 
 ## 📌 Current Progress
-- Project structure created
-- User model implemented
-- Backend APIs under development
+- Project structure implemented ✔  
+- User entity and repository ✔  
+- Registration API ✔  
+- Password encryption ✔  
+- JWT integration 🚧  
+
+---
+
+## 📌 Future Improvements
+- Complete JWT authentication flow  
+- Role-based authorization (Admin/User)  
+- Input validation and exception handling  
+- Frontend integration (React)  
+
+---
+
+## 📸 Screenshots
+(To be added after API testing)
+
+---
+
+## 📌 Status
+🚧 Actively under development
