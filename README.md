@@ -35,6 +35,17 @@ src/
  ├── config
  └── security
 
+ ## 🗄️ Database Configuration
+- MySQL database integration using Spring Data JPA
+- User data stored in relational database
+- JPA used for ORM mapping
+
+## 🏗️ Architecture
+- Controller Layer (Handles API requests)
+- Service Layer (Business logic)
+- Repository Layer (Database operations)
+- Model Layer (Entity classes)
+
 ## 📌 Status
 🚧 Currently under development
 
