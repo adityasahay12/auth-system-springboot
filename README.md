@@ -37,3 +37,5 @@ src/
 - Role-based authentication (Admin/User)
 - API validation and exception handling
 - Frontend integration (React)
+
+Spring Boot Authentication System with JWT, Security, and MySQL (In Progress)
