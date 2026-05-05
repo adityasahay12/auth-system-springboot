@@ -39,3 +39,8 @@ src/
 - Frontend integration (React)
 
 Spring Boot Authentication System with JWT, Security, and MySQL (In Progress)
+
+## 📌 Current Progress
+- Project structure created
+- User model implemented
+- Backend APIs under development
