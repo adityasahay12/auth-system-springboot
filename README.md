@@ -1,95 +1,111 @@
-# 🔐 Authentication System (Spring Boot)
+# 🔐 Authentication System (SpringBoot)
 
-## 🚀 Overview
-A backend authentication system built using Spring Boot and Spring Security.  
-It provides secure user registration and login functionality with password encryption and JWT-based authentication (in progress).
+A secure backend authentication system built with Spring Boot, Spring Security, JWT, OAuth2, and MySQL. It provides user registration, login, token-based authentication, refresh tokens, and OAuth2 login support.
 
 ---
 
-## 🔥 Features
-- User Registration API
-- User Login API (structure implemented)
-- Password Encryption using BCrypt
-- RESTful API design
-- Layered backend architecture
+## 🚀 Features
+
+- User Registration
+- User Login
+- JWT Authentication
+- Refresh Token Authentication
+- Google OAuth2 Login
+- GitHub OAuth2 Login
+- Role-Based Authorization
+- BCrypt Password Encryption
+- RESTful APIs
+- Swagger API Documentation
 
 ---
 
 ## 🛠️ Tech Stack
-- Java
-- Spring Boot
+
+- Java 21
+- Spring Boot 3
 - Spring Security
-- JWT (in progress)
-- MySQL
 - Spring Data JPA
-
----
-
-## 🔗 API Endpoints
-| Method | Endpoint | Description |
-|-------|--------|------------|
-| POST | /api/auth/register | Register new user |
-| POST | /api/auth/login | Login user |
-| GET  | /api/auth/test | Test protected API |
+- JWT
+- OAuth2
+- MySQL
+- Maven
+- Docker
+- Swagger (OpenAPI)
 
 ---
 
 ## 📂 Project Structure
 
-src/
-├── controller
-├── service
-├── repository
-├── model
-├── config
-└── security
-
+```
+src
+└── main
+    ├── java
+    │   └── com.substring.auth.app
+    │       ├── auth
+    │       │   ├── config
+    │       │   ├── controllers
+    │       │   ├── entities
+    │       │   ├── helpers
+    │       │   ├── payload
+    │       │   ├── repositories
+    │       │   └── services
+    │       ├── config
+    │       ├── dtos
+    │       └── exceptions
+    └── resources
+```
 
 ---
 
-## 🏗️ Architecture
-- **Controller Layer** → Handles HTTP requests  
-- **Service Layer** → Business logic  
-- **Repository Layer** → Database operations  
-- **Model Layer** → Entity classes  
+## 🔗 Main API Endpoints
 
----
-
-## 🗄️ Database
-- MySQL database integration  
-- Spring Data JPA for ORM  
-- User data stored securely  
+| Method | Endpoint |
+|---------|----------|
+| POST | /api/auth/register |
+| POST | /api/auth/login |
+| POST | /api/auth/refresh |
+| GET | /api/users/me |
 
 ---
 
 ## 🔐 Security Features
-- Password encryption using BCrypt  
-- Structured authentication flow  
-- JWT authentication (in progress)  
+
+- BCrypt Password Encryption
+- JWT Access Token
+- Refresh Token
+- OAuth2 Authentication
+- Role-Based Authorization
+- Protected REST APIs
 
 ---
 
-## 📌 Current Progress
-- Project structure implemented ✔  
-- User entity and repository ✔  
-- Registration API ✔  
-- Password encryption ✔  
-- JWT integration 🚧  
+## 🗄️ Database
+
+- MySQL
+- Spring Data JPA
+- Hibernate ORM
 
 ---
 
-## 📌 Future Improvements
-- Complete JWT authentication flow  
-- Role-based authorization (Admin/User)  
-- Input validation and exception handling  
-- Frontend integration (React)  
+## ▶️ Run the Project
+
+```bash
+mvn clean install
+mvn spring-boot:run
+```
 
 ---
 
-## 📸 Screenshots
-(To be added after API testing)
+## 🚀 Future Improvements
+
+- Email Verification
+- Forgot Password
+- Two-Factor Authentication (2FA)
+- Docker Compose
+- Unit & Integration Tests
 
 ---
 
-## 📌 Status
-🚧 Actively under development
+## 👨‍💻 Author
+
+Aditya
